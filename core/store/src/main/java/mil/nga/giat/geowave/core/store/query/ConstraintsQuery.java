@@ -32,7 +32,7 @@ import mil.nga.giat.geowave.core.store.util.DataStoreUtils;
 
 public class ConstraintsQuery
 {
-	public static final int MAX_RANGE_DECOMPOSITION = 2000;
+	public static final int MAX_RANGE_DECOMPOSITION = 1000;
 	public static final int AGGREGATION_RANGE_DECOMPOSITION = 10;
 
 	public final Pair<DataAdapter<?>, Aggregation<?, ?, ?>> aggregation;
