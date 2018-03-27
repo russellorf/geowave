@@ -226,6 +226,10 @@ public class SpatialDimensionalityTypeProvider implements
 			options.storeTime = storeTime;
 			return this;
 		}
+		public SpatialIndexBuilder setCrs(String crs){
+			options.crs = crs;
+			return this;
+		}
 
 		@Override
 		public PrimaryIndex createIndex() {
