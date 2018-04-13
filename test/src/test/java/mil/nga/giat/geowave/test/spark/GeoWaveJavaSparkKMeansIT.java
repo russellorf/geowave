@@ -88,7 +88,8 @@ public class GeoWaveJavaSparkKMeansIT
 	}
 
 	@Test
-	public void testKMeansRunner() {
+	public void testKMeansRunner()
+			throws Exception {
 		TestUtils.deleteAll(inputDataStore);
 
 		// Load data

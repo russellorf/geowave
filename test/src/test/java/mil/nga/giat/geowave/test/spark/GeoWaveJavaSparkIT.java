@@ -89,7 +89,8 @@ public class GeoWaveJavaSparkIT extends
 	}
 
 	@Test
-	public void testLoadRDD() {
+	public void testLoadRDD()
+			throws Exception {
 		// Set up Spark
 		SparkConf sparkConf = new SparkConf();
 

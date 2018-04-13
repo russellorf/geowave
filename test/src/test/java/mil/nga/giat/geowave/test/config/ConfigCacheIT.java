@@ -181,7 +181,8 @@ public class ConfigCacheIT
 	}
 
 	@Test
-	public void removeStore() {
+	public void removeStore()
+			throws Exception {
 		addStore();
 
 		final RemoveStoreCommand command = new RemoveStoreCommand();
@@ -272,7 +273,8 @@ public class ConfigCacheIT
 	}
 
 	@Test
-	public void removeIndex() {
+	public void removeIndex()
+			throws Exception {
 		addIndex();
 
 		final RemoveIndexCommand command = new RemoveIndexCommand();
@@ -291,7 +293,8 @@ public class ConfigCacheIT
 	}
 
 	@Test
-	public void addIndexGroup() {
+	public void addIndexGroup()
+			throws Exception {
 		addIndex();
 
 		final AddIndexGroupCommand command = new AddIndexGroupCommand();
@@ -312,7 +315,8 @@ public class ConfigCacheIT
 	}
 
 	@Test
-	public void removeIndexGroup() {
+	public void removeIndexGroup()
+			throws Exception {
 		addIndexGroup();
 
 		// BELOW: Just to remove the index

@@ -78,12 +78,14 @@ public class GeoWaveBasicSpatialVectorIT extends
 	}
 
 	@Test
-	public void testMultiThreadedIngestAndQuerySpatialPointsAndLines() {
+	public void testMultiThreadedIngestAndQuerySpatialPointsAndLines()
+			throws Exception {
 		testIngestAndQuerySpatialPointsAndLines(4);
 	}
 
 	public void testIngestAndQuerySpatialPointsAndLines(
-			final int nthreads ) {
+			final int nthreads )
+			throws Exception {
 		long mark = System.currentTimeMillis();
 
 		LOGGER.debug("Testing DataStore Type: " + dataStore.getType());
