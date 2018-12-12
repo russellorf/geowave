@@ -212,16 +212,16 @@ public class GeoWaveBasicSparkIT extends
 				"polygon tornado tracks spatial query");
 		// TODO understand why the spatial-temporal queries on tornado tracks
 		// are running into memory issues
-		// verifyQuery(
-		// context,
-		// TEST_BOX_TEMPORAL_FILTER_FILE,
-		// TORNADO_TRACKS_EXPECTED_BOX_TEMPORAL_FILTER_RESULTS_FILE,
-		// "bounding box tornado tracks spatial-temporal query");
-		// verifyQuery(
-		// context,
-		// TEST_POLYGON_TEMPORAL_FILTER_FILE,
-		// TORNADO_TRACKS_EXPECTED_POLYGON_TEMPORAL_FILTER_RESULTS_FILE,
-		// "polygon tornado tracks spatial-temporal query");
+		verifyQuery(
+				context,
+				TEST_BOX_TEMPORAL_FILTER_FILE,
+				TORNADO_TRACKS_EXPECTED_BOX_TEMPORAL_FILTER_RESULTS_FILE,
+				"bounding box tornado tracks spatial-temporal query");
+		verifyQuery(
+				 context,
+				 TEST_POLYGON_TEMPORAL_FILTER_FILE,
+				 TORNADO_TRACKS_EXPECTED_POLYGON_TEMPORAL_FILTER_RESULTS_FILE,
+				 "polygon tornado tracks spatial-temporal query");
 
 		// test configurable CRS for tornado tracks
 		verifyQuery(
@@ -238,18 +238,18 @@ public class GeoWaveBasicSparkIT extends
 				TestUtils.CUSTOM_CRS);
 		// TODO understand why the spatial-temporal queries on tornado tracks
 		// are running into memory issues
-		// verifyQuery(
-		// context,
-		// TEST_BOX_TEMPORAL_FILTER_FILE,
-		// TORNADO_TRACKS_EXPECTED_BOX_TEMPORAL_FILTER_RESULTS_FILE,
-		// "bounding box tornado tracks spatial-temporal query with other CRS",
-		// TestUtils.CUSTOM_CRS);
-		// verifyQuery(
-		// context,
-		// TEST_POLYGON_TEMPORAL_FILTER_FILE,
-		// TORNADO_TRACKS_EXPECTED_POLYGON_TEMPORAL_FILTER_RESULTS_FILE,
-		// "polygon tornado tracks spatial-temporal query with other CRS",
-		// TestUtils.CUSTOM_CRS);
+		verifyQuery(
+				 context,
+				 TEST_BOX_TEMPORAL_FILTER_FILE,
+				 TORNADO_TRACKS_EXPECTED_BOX_TEMPORAL_FILTER_RESULTS_FILE,
+				 "bounding box tornado tracks spatial-temporal query with other CRS",
+				 TestUtils.CUSTOM_CRS);
+		verifyQuery(
+				 context,
+				 TEST_POLYGON_TEMPORAL_FILTER_FILE,
+				 TORNADO_TRACKS_EXPECTED_POLYGON_TEMPORAL_FILTER_RESULTS_FILE,
+				 "polygon tornado tracks spatial-temporal query with other CRS",
+				 TestUtils.CUSTOM_CRS);
 
 		// now test with both ingested
 		TestUtils.testLocalIngest(

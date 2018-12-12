@@ -45,7 +45,7 @@ public class XZOrderSFC implements
 	private XElement LevelTerminator;
 
 	// TODO magic number; have to determine most appropriate value?
-	private static int g = 12;
+	private static int g = 11;
 
 	private SFCDimensionDefinition[] dimensionDefs;
 	private int dimensionCount;
